@@ -225,12 +225,12 @@ export const drawYAxis = (color = '#e0e0e0') => {
 export const drawYAxisLabels = (arr, height, minValue, color = '#000000') => {
   return (
     <View style={{
-      width: 33,
+      paddingLeft: 10,
       height: height,
       justifyContent: 'flex-end',
       alignItems: 'flex-end',
       marginBottom: minValue && arr && arr.length > 0 ? -1 * arr[0][2] * minValue : null,
-      overflow: 'hidden'
+     
     }}>
 
       {arr.length === 0 ? (
